@@ -21,7 +21,7 @@ $Mobile = $_SESSION['Mobile'];
 //$_SESSION['username'] -> $username
 //$_SESSION['Mobile'] -> $Mobile
 $username = $_SESSION['username'];
-include_once($_SERVER['DOCUMENT_ROOT']."/crm/agent/connection/dbconnection_crm.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/stockdeal/agent/connection/dbconnection_crm.php");
 //print_r($_SESSION);
 date_default_timezone_set("Asia/Kolkata");
 if($_SESSION['username'] != ''){

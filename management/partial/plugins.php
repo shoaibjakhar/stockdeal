@@ -5,7 +5,7 @@
 <link href="css/tabbar.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 
-	 <?php include($_SERVER['DOCUMENT_ROOT']."/crm/management/connection/dbconnection_crm.php"); ?>
+	 <?php include($_SERVER['DOCUMENT_ROOT']."/stockdeal/management/connection/dbconnection_crm.php"); ?>
 <?php
  $result = mysqli_query($connect, "SELECT Theme_CSS FROM Options WHERE Id = '1'");
  $Theme_CSS = mysqli_result($result, 0);

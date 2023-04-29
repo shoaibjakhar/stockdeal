@@ -2,7 +2,7 @@
 //session_start();
 //echo phpversion(); /*include('includes/allow.php') */ ?>
 
-<?php include_once($_SERVER['DOCUMENT_ROOT']."/crm/management/connection/dbconnection_crm.php"); 
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/stockdeal/management/connection/dbconnection_crm.php"); 
   $connect = mysqli_connect('localhost','stockdeal_ra','0YZm0!$F@','stockdeal_ra');
   if(!$connect)
   {

@@ -7,7 +7,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
 define('EXPIRY',time()+3*60*60);
-include($_SERVER['DOCUMENT_ROOT']."/crm/agent/cookie.class.php");
+include($_SERVER['DOCUMENT_ROOT']."/stockdeal/agent/cookie.class.php");
 
 
 
@@ -16,7 +16,7 @@ include($_SERVER['DOCUMENT_ROOT']."/crm/agent/cookie.class.php");
 
 ?>
 
-<?php include_once($_SERVER['DOCUMENT_ROOT']."/crm/agent/connection/dbconnection_crm.php"); ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/stockdeal/agent/connection/dbconnection_crm.php"); ?>
 
 <?php
 

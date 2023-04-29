@@ -4,7 +4,7 @@
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
-include_once($_SERVER['DOCUMENT_ROOT']."/crm/agent/connection/dbconnection_crm.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/stockdeal/agent/connection/dbconnection_crm.php");
 
 
    

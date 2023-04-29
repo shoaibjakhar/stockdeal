@@ -8,7 +8,7 @@ date_default_timezone_set("Asia/Calcutta");
 $domain_name = $_SERVER['HTTP_HOST'];
 
 // Real Stock Ideas
-if($domain_name == 'management.stockdeal.co.in' || $domain_name == 'www.management.stockdeal.co.in'){
+if($domain_name == 'management.stockdeal.co.in' || $domain_name == 'www.management.stockdeal.co.in' || $domain_name == 'localhost'){
 
 	define('DBHOST','localhost');
 	define('DBUSER','stockdeal_ra');
