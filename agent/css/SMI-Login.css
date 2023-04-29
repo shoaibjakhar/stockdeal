@@ -1,0 +1,44 @@
+html,body { 
+  background:#089fbe
+}
+.container-fluid { background:none}
+.form-control {border-left:#089fbe solid 3px;border-radius: 0px; height: 40px;}
+.btn {-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;}
+.btn-primary {border:#fff solid 1px;background:#089fbe;color:#fff}
+.btn-primary:hover {border:#fff solid 1px;background:#089fbe;color:#fff}
+.message {color:red;padding:0px 0 10px 0;}
+.tab_1Active {border:#f5a93d solid 1px;background:#f5a93d;padding:10px 10px  10px 20px;color:#fff !important}
+.tab_1 {border:#f5a93d solid 1px;padding:10px 10px  10px 20px;color:#f5a93d;}
+.social_icons { margin:0; padding:0; float:right}
+.social_icons li {margin: 0;padding: 10px 10px;float: left;list-style-type: none;background: #f5a93d;border-right: #fff solid 1px;cursor: pointer;}
+.social_icons li:first-child {border-left:#f5a93d solid 1px;}
+.social_icons li:last-child {border-right:#f5a93d solid 0px;}
+
+.Register .col-sm-12, .col-sm-5{ margin:15px 0 0 0; padding:0}
+#Tab1, #Tab2 { cursor:pointer}
+#Tab2Inner h1, #Tab1Inner h1 { margin:0; padding:0;}
+	
+.login-wrap-main {width: 360px; position: absolute; top:50%; left: 50%; margin-left:-180px;margin-top:-340px;}
+.login-wrap {background: #fff}
+	
+	/* Large desktop */
+@media (min-width: 1200px) {
+  
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 760px) {
+
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 660px) {
+
+	
+	
+   }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .login-wrap {width: 300px; position: absolute; top:50%; left: 50%; margin-left:-150px;margin-top:80px; background: #fff}
+	
+ }

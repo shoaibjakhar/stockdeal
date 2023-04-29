@@ -1,0 +1,4 @@
+<?php if($_SESSION['Role'] == 'compliance officer' || $_SESSION['Role'] == 'Super Admin' || $_SESSION['Role'] == 'Team Leader'  || $_SESSION['Role'] == 'Admin Assist' || $_SESSION['Role'] == 'Research Analyst' ){ 
+	echo('<a href="memberpage.php">Dashbord</a> | <a href="customer-profile-all-in-one.php?filter=last_month">Last Month</a> | <a href="customer-profile-all-in-one.php?filter=this_month">This Month</a> | <a href="customer-profile-all-in-one.php?filter=last_3_months">Last 3 Month</a> | <a href="customer-profile-all-in-one.php?filter=last_6_months">Last 6 Month</a> | <a href="customer-profile-new-100-records-details.php" target="_blank">Payment History</a> | <a href="clients.php">Clients Login</a> | <a href="risk-profile.php" target="_blank">Risk Profile</a>');
+		
+		}?>	 

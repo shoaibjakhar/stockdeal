@@ -1,0 +1,6 @@
+[03-Dec-2021 05:18:30 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11534616 bytes) in /home/crmwala/public_html/Admin-SMI/Export-to-Excel/download-excel.php on line 75
+[03-Dec-2021 05:18:56 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11534616 bytes) in /home/crmwala/public_html/Admin-SMI/Export-to-Excel/download-excel.php on line 75
+[03-Dec-2021 05:19:42 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11534616 bytes) in /home/crmwala/public_html/Admin-SMI/Export-to-Excel/download-excel.php on line 72
+[03-Dec-2021 05:40:47 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11755520 bytes) in /home/crmwala/public_html/Admin-SMI/Export-to-Excel/download-excel.php on line 84
+[03-Dec-2021 05:40:52 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11755520 bytes) in /home/crmwala/public_html/Admin-SMI/Export-to-Excel/download-excel.php on line 84
+[03-Dec-2021 05:40:58 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11755520 bytes) in /home/crmwala/public_html/Admin-SMI/Export-to-Excel/download-excel.php on line 84

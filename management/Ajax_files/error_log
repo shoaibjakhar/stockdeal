@@ -1,0 +1,30 @@
+[30-Sep-2021 04:12:17 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[30-Sep-2021 09:03:37 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[01-Oct-2021 05:22:53 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[01-Oct-2021 07:57:12 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[01-Oct-2021 08:24:23 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[01-Oct-2021 11:29:48 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[01-Oct-2021 12:11:33 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[04-Oct-2021 12:15:02 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 05:45:35 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 06:32:13 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 07:04:50 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 07:05:13 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 07:05:22 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 07:13:00 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 07:13:00 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 11:23:46 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[07-Oct-2021 11:24:20 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[08-Oct-2021 04:59:44 UTC] PHP Notice:  Undefined index: page in /home2/uxartmun/public_html/SMI-Admin/connection/SMI_Wordpress_Connection.php on line 12
+[09-Dec-2021 06:41:35 UTC] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/crmwala/public_html/Admin-SMI/Ajax_files/Admin_Enable_Disable.php on line 6
+[09-Dec-2021 06:42:12 UTC] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/crmwala/public_html/Admin-SMI/Ajax_files/Admin_Enable_Disable.php on line 6
+[10-Jan-2022 06:29:29 UTC] PHP Notice:  Undefined index: page in /home/realstock/public_html/RSI-Admin/connection/RSI_Wordpress_Connection.php on line 13
+[10-Jan-2022 06:29:52 UTC] PHP Notice:  Undefined index: page in /home/realstock/public_html/RSI-Admin/connection/RSI_Wordpress_Connection.php on line 13
+[10-Jan-2022 08:35:46 UTC] PHP Notice:  Undefined index: page in /home/realstock/public_html/RSI-Admin/connection/RSI_Wordpress_Connection.php on line 13
+[14-Jan-2022 06:06:54 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13
+[14-Jan-2022 06:42:37 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13
+[14-Jan-2022 13:22:00 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13
+[14-Jan-2022 13:22:22 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13
+[14-Jan-2022 13:23:25 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13
+[14-Jan-2022 13:23:47 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13
+[14-Jan-2022 13:24:10 UTC] PHP Notice:  Undefined index: page in /home/shareadvisorin/public_html/SA-Admin/connection/SA_Wordpress_Connection.php on line 13

@@ -1,0 +1,258 @@
+body {
+  color: #6e6e6e;
+}
+
+.color-red {
+  color: #e74c3c;
+}
+
+.color-green {
+  color: #009900;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-primary {
+  color: #1f365b;
+}
+
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #1f365b;
+  border-color: #1f365b;
+}
+
+.input-primary {
+  border: 1px solid #1f365b;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1f365b;
+  border-color: #1f365b;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  color: #fff;
+  background-color: #1f365b;
+  border-color: #1f365b;
+}
+
+.modal-header {
+  border-bottom: 1px solid #1f365b;
+  background: #1f365b;
+  color: #fff;
+}
+
+.input-group-addon {
+  color: #fff;
+  background-color: #1f365b;
+  border: 1px solid #1f365b;
+}
+
+.modal .form-control {
+  border: 1px solid #1f365b;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  color: #fff;
+  background-color: #1f365b;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #1f365b;
+  border-color: #1f365b;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+  border-bottom: #1f365b solid 2px;
+}
+
+.navbar-inner {
+  background: #1f365b;
+  border-color: transparent;
+}
+
+.navbar-inner {
+  background: #1f365b;
+  border-color: transparent;
+}
+
+.navbar-inner {
+  background: #1f365b;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
+  color: #fff;
+  background-color: transparent;
+  border-bottom: transparent solid 2px;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+  border-bottom: #fff solid 2px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.header-top {
+  background: #1f365b;
+}
+
+footer {
+  background: #1f365b;
+  color: #fff;
+}
+
+.sidebar {
+  border-right: #E6910B solid 1px;
+  background: #1f365b;
+}
+
+.logout a {
+  color: #fff;
+}
+
+.sidebar li {
+  color: #fff;
+  border-bottom: #fff  solid 1px;
+}
+
+.sidebar li a {
+  color: #fff;
+}
+
+.sidebar li a:hover {
+  background: #34495e;
+}
+
+.sidebar li:nth-child(1) {
+  border-top: #fff  solid 1px;
+}
+
+.sidebar li.active {
+  background: #34495e;
+}
+
+.Nagitive {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.Nagitive:hover, .Nagitive:focus {
+  color: #fff;
+}
+
+.Positive {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.Positive:hover, .Positive:focus {
+  color: #fff;
+}
+
+.Open {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.Open:hover, .Open:focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+.duplicate {
+  background: #ec7b7b;
+  color: #fff;
+}
+
+.High {
+  color: #155724;
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+}
+
+.Medium {
+  color: #856404;
+  background-color: #fff3cd  !important;
+  border-color: #ffeeba !important;
+}
+
+.Low {
+    color: #004085;
+    background-color: #cce5ff  !important;
+    border-color: #b8daff  !important;
+}
+
+.Open {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.Close {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.Decline {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.RSI-Primary {
+  color: #fff;
+  background-color: #f05b62;
+  border-color: #f05b62;
+}
+
+.brand-color-bg {
+  background: #1f365b;
+  color: #fff;
+}
+
+.brand-color-bg-n-bdr {
+  border: #1f365b solid 1px;
+  color: #fff;
+  background: #1f365b;
+}
+
+.panel-heading {
+  border: #1f365b solid 1px;
+  color: #fff;
+  background: #1f365b;
+}
+
+.bg-red {
+  background: #e74c3c;
+}
+
+.bg-green {
+  background: #009900;
+}
+
+.Expired {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+}
+
+.Active {
+  background: #009900;
+  color: #fff;
+  text-align: center;
+}
+
+.toggle-menu { background:#1f365b;}
