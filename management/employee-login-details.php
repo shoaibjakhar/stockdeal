@@ -212,6 +212,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        | <a href="inactive-employee-login-details.php?filter=admin" >InActive Team Leader login details</a>
        | <a href="sr-tl-login-details.php?filter=admin"  >SR Team Leader login details</a>
        | <a href="inactive-sr-tl-login-details.php?filter=admin" >InActive SR Team Leader login details</a>
+       | <a href="updated_salaries_emp_list.php" >Updated Salaries Employees List</a>
      <?php } ?>
    </div>
 
@@ -1229,7 +1230,7 @@ echo( '</table>' );
    <?php }?>
 
 
-   <div class="col-sm-3">
+   <!-- <div class="col-sm-3">
 
 
      <div class="form-group">
@@ -1240,7 +1241,7 @@ echo( '</table>' );
 
     </div>
 
-  </div>
+  </div> -->
 
   <div class="col-sm-3">
 

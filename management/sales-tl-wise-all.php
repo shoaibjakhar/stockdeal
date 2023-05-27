@@ -447,8 +447,8 @@ echo('<thead>');
     echo('<th style="text-align:center">Date of Join</th>');
  
 
-  echo('<th style="text-align:center">Agent</th>');
-   echo('<th style="text-align:center;">Team Leader</th>');
+  echo('<th style="text-align:center">Team Leader</th>');
+   echo('<th style="text-align:center;">SR Team Leader</th>');
 
   echo('<th style="text-align:center">Sales</th>');
  

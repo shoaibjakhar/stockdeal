@@ -71,6 +71,8 @@ check_agent_bank_details();
   <?php if($_SESSION['Role'] == 'Super Admin'){ ?>
   | <a href="employee-login-details.php?filter=admin" >Team Leader login details</a>
   | <a href="sr-tl-login-details.php?filter=admin" >SR Team Leader login details</a>
+  | <a href="Vendor_forms.php?filter=admin" >Vendor Forms</a>
+  | <a href="support_staff.php?filter=admin" >Support Staff</a>
   <?php }
   ?>
 

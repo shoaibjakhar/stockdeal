@@ -68,6 +68,19 @@ $IFSC_Code   = $_POST['IFSC_Code'];
 
 
 <?php
+
+$get_sql = "SELECT id,salery FROM  `employee` WHERE  `Id` = '" .$Id. "' ";
+     $rslt = mysqli_query($connect , $get_sql );
+     $previous_salery = mysqli_fetch_array( $rslt )['salery'];
+     
+     if (!empty($previous_salery) && $previous_salery != $salery) {
+
+     	$insert_sql ="INSERT INTO `employee_salaries_update_logs` (`Id`, `employee_id`, `previous_salary`, `updated_salary`) VALUES 
+	
+	(NULL, '".$Id."', '".$previous_salery."', '".$salery."');";
+
+mysqli_query($connect, $insert_sql) or die('Error updating database');
+     }
 /*
 	$sql ="INSERT INTO `employee` (`Id`, `Mobile`, `username`, `Email`, `Date_of_Join`, `Emergency_Number`, `Date_of_Birth`, `Address`, `Gender`, `Marital_Status`, `Permanent_Address`, `PAN_Number`, `PAN_Copy`, `Adhar_Number`, `Adhar_Copy`, `Blood_Group`, `Photo`, `Date_of_Leave`) VALUES 
 	

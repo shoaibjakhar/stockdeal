@@ -647,31 +647,58 @@ echo '<td>' . $sale .'</td>';
                     //$sale= getShared($get_agents['username']) ;
 
 $insentive=0;
-if( $sale >= 100000 && $sale  <= 124999)
-{
-  $insentive=5000;
-}
-else if($sale >=125000 && $sale <=149999)
-{
-  $insentive=7500;
-}
-else if($sale  >=150000 && $sale <= 174999)
-{
-  $insentive=10000;
-}
-else if($sale  >=175000 && $sale <= 199999)
-{
-  $insentive=12500;
-}
-else if($sale >=200000 && $sale <= 224999)
-{
-  $insentive=15000;
-}
-else if ($sale >=225000) 
-{
-  $devider = intdiv(($sale - 200000) ,25000);
-  $insentive = 15000  + ($devider * 3000);
-}
+
+$sales_amount = $sale;
+
+        if(isset($_GET['start']) && isset($_GET['end'])){
+          $sql22 = "select * from incentives_definitions where start_date <= '".$_GET['start']."' and end_date >= '".$_GET['end']."'";
+        } else if(isset($_GET['previous_month'])) {
+          
+           $newDate = date('Y-m-t', strtotime(date(). ' - '.$_GET['previous_month'].' months'));
+
+           $timestamp = strtotime($newDate); 
+           $start_date = date('Y-m-01 00:00:00', $timestamp); 
+           $end_date = date('Y-m-t 12:59:59', $timestamp);
+
+          $sql22 = "select * from incentives_definitions where start_date <= '".$start_date."' and (end_date IS NULL OR end_date >= '".$end_date."')";
+        } else {
+          $sql22 = "select * from incentives_definitions where start_date <= now() and (end_date IS NULL OR end_date >= now())";
+        }
+        // echo $sql22;
+        $qrys22 = mysqli_query($connect,$sql22);
+
+          while($rows22 = $qrys22->fetch_assoc()){
+            if ($sales_amount >= $rows22['value_from'] && $sales_amount <= $rows22['value_to']) {
+              $insentive = $rows22['incentive_amount'];
+            // echo "<pre>"; print_r($incentive); echo "</pre>";
+            }
+          }
+
+// if( $sale >= 100000 && $sale  <= 124999)
+// {
+//   $insentive=5000;
+// }
+// else if($sale >=125000 && $sale <=149999)
+// {
+//   $insentive=7500;
+// }
+// else if($sale  >=150000 && $sale <= 174999)
+// {
+//   $insentive=10000;
+// }
+// else if($sale  >=175000 && $sale <= 199999)
+// {
+//   $insentive=12500;
+// }
+// else if($sale >=200000 && $sale <= 224999)
+// {
+//   $insentive=15000;
+// }
+// else if ($sale >=225000) 
+// {
+//   $devider = intdiv(($sale - 200000) ,25000);
+//   $insentive = 15000  + ($devider * 3000);
+// }
 echo '<td> '.$insentive.'</td>';
 $total_saley_after_insentive = ($get_agents['salery']+$insentive);
 echo '<td>' . $total_saley_after_insentive. '</td>';

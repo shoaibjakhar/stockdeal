@@ -1,6 +1,6 @@
 <?php
 
- include($_SERVER['DOCUMENT_ROOT']."/connection/dbconnection_crm.php"); 
+ include($_SERVER['DOCUMENT_ROOT']."/stockdeal/agent/connection/dbconnection_crm.php"); 
 ?>
 
 

@@ -111,9 +111,9 @@ input[type="checkbox"]{
          <a href="memberpage.php">Dashbord</a> | 
          <a href="website-leads-rsi.php">Single Assign</a> | 
          <a href="assign-multiple-leads.php">Multiple Assign</a> | 
-         <a href="assign-bulk-leads.php" class="btn btn-xs btn-primary">Bulk Assign</a> |
+         <a href="assign-bulk-leads.php">Bulk Assign</a> |
          <a href="leads-filter_4_new.php">Re Assign</a> | 
-         <a href="Duplicate_leads.php">Duplicate Leads</a> | 
+         <a href="Duplicate_leads.php" class="btn btn-xs btn-primary">Duplicate Leads</a> | 
          <!--<a href="#">Analytics</a>-->
 </div> 
 
@@ -282,19 +282,14 @@ $query = mysqli_query($connect, $sel_data);
         }else{ ?>
             <tr><td colspan="5">No records found.</td></tr> 
         <?php }
+        $duplicate_leads_on_top = [];
         if(!empty($leads)){
                 foreach($leads as $row){
                     if($duplicate[$row['Mobile']]>1){
                         $duplicate_leads_on_top[] = $row; 
-                    } else {
-                        $not_duplicate_leads[] = $row; 
-
                     }
                 }
 
-                foreach ($not_duplicate_leads as $key => $value) {
-                    array_push($duplicate_leads_on_top, $value);
-                }
                 foreach($duplicate_leads_on_top as $row){
                     ?>
                      <?php echo('<tr class="'.$row['UserName'].'"');
@@ -346,8 +341,8 @@ $query = mysqli_query($connect, $sel_data);
             </td>
             <td colspan="9">
                 <?php
-                if(!empty($leads)){?>
-                    <b> <?php echo count($leads); ?></b>
+                if(!empty($duplicate_leads_on_top)){?>
+                    <b> <?php echo count($duplicate_leads_on_top); ?></b>
                <?php }
                else
                {?>

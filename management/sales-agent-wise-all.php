@@ -415,7 +415,7 @@ echo('<thead>');
 //   only show to admin
   if($_SESSION['Role'] == 'Super Admin') {
       echo('<th style="text-align:center">Salery</th>');
-      echo('<th style="text-align:center">Incentive  - 18%</th>');
+      echo('<th style="text-align:center">Incentive</th>');
       echo('<th style="text-align:center">Total Payable</th>');
       
   }
@@ -478,51 +478,69 @@ foreach($get_data as $key => $row){
        $incentive = 0;
        
        echo('<td style="text-align:center">'.$fetch_data['salery'].'</td>');
+
+
+        $sales_amount = $row['SalesAgentWise'];
+
+        if(isset($_GET['from']) && isset($_GET['to'])){
+          $sql22 = "select * from incentives_definitions where start_date <= '".$_GET['from']."' and end_date >= '".$_GET['to']."'";
+        } else {
+          $sql22 = "select * from incentives_definitions where start_date <= now() and (end_date IS NULL OR end_date >= now())";
+        }
+        $qrys22 = mysqli_query($connect,$sql22);
+
+          while($rows22 = $qrys22->fetch_assoc()){
+            if ($sales_amount >= $rows22['value_from'] && $sales_amount <= $rows22['value_to']) {
+            // echo "<pre>"; print_r($sales_amount); echo "</pre>";
+              $incentive = $rows22['incentive_amount'];
+            }
+          }
+           echo('<td style="text-align:center">'.$incentive.'</td>');
        
-       if($row['SalesAgentWise'] >= 100000 && $row['SalesAgentWise'] <= 124999){
-           $incentive = 5000;
-           echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
-       else if($row['SalesAgentWise'] >= 125000 && $row['SalesAgentWise'] <= 149999){
-           $incentive = 7500;
-           echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
-       else if($row['SalesAgentWise'] >= 150000 && $row['SalesAgentWise'] <= 174999){
-           $incentive = 10000;
-           echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
-      else if($row['SalesAgentWise'] >= 175000 && $row['SalesAgentWise'] <= 199999){
-           $incentive = 10000;
-           echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
-       else if($row['SalesAgentWise'] >= 200000 && $row['SalesAgentWise'] <= 224999){
-           $incentive = 12500;    
-           echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
-       else if($row["SalesAgentWise"] > 225000){
+      //  if($row['SalesAgentWise'] >= 100000 && $row['SalesAgentWise'] <= 124999){
+      //      $incentive = 5000;
+      //      echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
+      //  else if($row['SalesAgentWise'] >= 125000 && $row['SalesAgentWise'] <= 149999){
+      //      $incentive = 7500;
+      //      echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
+      //  else if($row['SalesAgentWise'] >= 150000 && $row['SalesAgentWise'] <= 174999){
+      //      $incentive = 10000;
+      //      echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
+      // else if($row['SalesAgentWise'] >= 175000 && $row['SalesAgentWise'] <= 199999){
+      //      $incentive = 10000;
+      //      echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
+      //  else if($row['SalesAgentWise'] >= 200000 && $row['SalesAgentWise'] <= 224999){
+      //      $incentive = 12500;    
+      //      echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
+      //  else if($row["SalesAgentWise"] > 225000){
           
 
 
-            $incentive = 0;
-            $devider = intdiv(($row["SalesAgentWise"] - 200000) ,25000);
-            $incentive = 15000  + ($devider * 3000);
+      //       $incentive = 0;
+      //       $devider = intdiv(($row["SalesAgentWise"] - 200000) ,25000);
+      //       $incentive = 15000  + ($devider * 3000);
                     
-          // $addTarget = 25000;
-          // $incentive = 15000;
-          //$i = 200000;
-          // while($row["SalesAgentWise"] > $i){
-          // echo "string";
-          //     if($row["SalesAgentWise"]%$addTarget == 0){
-          //          $incentive = $incentive+3000;
-          //          $i = $i+25000;
-          //     }
-          // }
+      //     // $addTarget = 25000;
+      //     // $incentive = 15000;
+      //     //$i = 200000;
+      //     // while($row["SalesAgentWise"] > $i){
+      //     // echo "string";
+      //     //     if($row["SalesAgentWise"]%$addTarget == 0){
+      //     //          $incentive = $incentive+3000;
+      //     //          $i = $i+25000;
+      //     //     }
+      //     // }
           
-          echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
-       else{
-           echo('<td style="text-align:center">'.$incentive.'</td>');
-       }
+      //     echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
+      //  else{
+      //      echo('<td style="text-align:center">'.$incentive.'</td>');
+      //  }
        
        echo('<td style="text-align:center">'.($fetch_data['salery'] + $incentive).'</td>');
 

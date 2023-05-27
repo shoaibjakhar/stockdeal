@@ -55,7 +55,8 @@
    <a href="website-leads-rsi.php" class="btn btn-xs btn-primary">Website Leads</a> | 
    <a href="assign-multiple-leads.php">Multiple Assign</a> |
    <a href="assign-bulk-leads.php">Bulk Assign</a> |
-   <a href="leads-filter_4_new.php">Re Assign</a> 
+   <a href="leads-filter_4_new.php">Re Assign</a> |
+    <a href="Duplicate_leads.php">Duplicate Leads</a> | 
    <!--| <a href="leads-count.php">Analytics</a>-->
  </div>
  <div class="containter" style="padding:20px 20px 0 20px;">
